@@ -5,6 +5,7 @@ import { getAuth } from "firebase/auth";
 import Button from 'react-bootstrap/Button';
 import Form from 'react-bootstrap/Form';
 
+
 const auth = getAuth(app);
 
 function App() {
@@ -23,8 +24,8 @@ function App() {
   };
   return (
     <div>
-       <div className="registration w-50 mx-auto mt-4 border border-primary p-4 rounded">
-        <h1 className="text-primary">Registration</h1>
+       <div className="registration w-50 mx-auto mt-4 p-4 border border-3 border-primary rounded">
+        <h1 className="text-primary">Registration!!</h1>
        <Form onSubmit={handleOnSubmit}>
       <Form.Group className="mb-3" controlId="formBasicEmail">
         <Form.Label>Email address</Form.Label>
@@ -41,7 +42,7 @@ function App() {
       <Form.Group className="mb-3" controlId="formBasicCheckbox">
         <Form.Check type="checkbox" label="Check me out" />
       </Form.Group>
-      <Button  variant="primary" type="submit">
+      <Button variant="primary" type="submit">
         Submit
       </Button>
     </Form>
